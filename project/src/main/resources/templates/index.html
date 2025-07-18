@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: #1f2937;
+            padding: 1rem 2rem;
+            color: white;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #2563eb;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        .result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #ecfdf5;
+            border-left: 4px solid #10b981;
+            border-radius: 6px;
+        }
+
+        .error {
+            background: #fef2f2;
+            border-left: 4px solid #dc2626;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Resume Matcher</h1>
+    <p>Find out how well your resume matches a job posting</p>
+</header>
+
+<main>
+    <form id="matchForm">
+        <div class="card">
+            <h2>Upload Your Resume</h2>
+            <label for="file">Upload Resume (PDF)</label>
+            <input type="file" id="file" name="file" accept="application/pdf" required>
+        </div>
+
+        <div class="card">
+            <h2>Enter Job Details</h2>
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" name="jobDescription" rows="5" required></textarea>
+
+            <label for="requiredSkills">Required Skills (comma-separated)</label>
+            <input type="text" id="requiredSkills" name="requiredSkills" placeholder="e.g., Java, Spring, SQL" required>
+
+            <button type="submit">Match Resume</button>
+        </div>
+    </form>
+
+    <div id="result" class="result" style="display: none;"></div>
+</main>
+
+<script>
+    const form = document.getElementById("matchForm");
+    const resultDiv = document.getElementById("result");
+
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const fileInput = document.getElementById("file");
+        const jobTitle = document.getElementById("jobTitle").value;
+        const jobDescription = document.getElementById("jobDescription").value;
+        const requiredSkillsRaw = document.getElementById("requiredSkills").value;
+        const requiredSkills = requiredSkillsRaw.split(",").map(s => s.trim());
+
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+        formData.append("jobTitle", jobTitle);
+        formData.append("jobDescription", jobDescription);
+        requiredSkills.forEach(skill => formData.append("requiredSkills", skill));
+
+        try {
+            const response = await fetch("/api/match/resume", {
+                method: "POST",
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error("Failed to get a match result.");
+            }
+
+            const data = await response.json();
+
+            resultDiv.style.display = "block";
+            resultDiv.classList.remove("error");
+            resultDiv.innerHTML = `
+                <h3>✅ Match Score: ${data.score.toFixed(2)}</h3>
+                <p><strong>Extracted Skills:</strong> ${data.extractedSkills.join(", ")}</p>
+            `;
+        } catch (err) {
+            resultDiv.style.display = "block";
+            resultDiv.classList.add("error");
+            resultDiv.innerHTML = `<p>❌ Error: ${err.message}</p>`;
+        }
+    });
+</script>
+</body>
+</html>

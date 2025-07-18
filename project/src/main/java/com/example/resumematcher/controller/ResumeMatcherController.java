@@ -7,13 +7,13 @@ import com.example.resumematcher.nlp.ResumeNLPProcessor;
 import com.example.resumematcher.strategy.KeywordMatchStrategy;
 import com.example.resumematcher.utils.PDFResumeParser;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-// import java.util.Arrays;
 import java.util.List;
 
-@RestController
+@Controller // Changed from @RestController to support HTML view return
 @RequestMapping("/api/match")
 public class ResumeMatcherController {
 
@@ -21,7 +21,14 @@ public class ResumeMatcherController {
     private final ResumeNLPProcessor nlpProcessor = new ResumeNLPProcessor();
     private final PDFResumeParser pdfParser = new PDFResumeParser();
 
+    // 🔁 Serve index.html from /templates
+    @GetMapping("/")
+    public String index() {
+        return "index"; // → looks for index.html in src/main/resources/templates/
+    }
+
     @PostMapping("/resume")
+    @ResponseBody // Ensures JSON response instead of view
     public ResponseEntity<?> matchResumeToJob(
             @RequestParam("file") MultipartFile file,
             @RequestParam("jobTitle") String jobTitle,
