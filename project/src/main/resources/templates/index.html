@@ -1,207 +1,247 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resume Matcher</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      margin: 0;
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: #fff;
-      min-height: 100vh;
-    }
-
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background: rgba(0, 0, 0, 0.25);
-      backdrop-filter: blur(10px);
-      border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.85;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.15);
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      margin-bottom: 2rem;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      font-weight: 600;
-      color: #fff;
-    }
-
-    label {
-      display: block;
-      margin-top: 1rem;
-      font-weight: 600;
-      font-size: 0.95rem;
-      color: #e0e0e0;
-    }
-
-    input[type="text"],
-    textarea,
-    input[type="file"] {
-      width: 100%;
-      padding: 0.75rem;
-      margin-top: 0.25rem;
-      border: none;
-      border-radius: 8px;
-      outline: none;
-      background: rgba(255, 255, 255, 0.2);
-      color: #fff;
-      font-size: 1rem;
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      color: rgba(255, 255, 255, 0.7);
-    }
-
-    button {
-      margin-top: 1.5rem;
-      padding: 0.75rem 2rem;
-      border: none;
-      border-radius: 8px;
-      background: linear-gradient(90deg, #ff512f, #dd2476);
-      color: white;
-      font-weight: 600;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    }
-
-    .result {
-      margin-top: 2rem;
-      padding: 1.5rem;
-      background: rgba(16, 185, 129, 0.2);
-      border-left: 4px solid #10b981;
-      border-radius: 8px;
-      color: #d1fae5;
-      font-weight: 500;
-    }
-
-    .error {
-      background: rgba(220, 38, 38, 0.2);
-      border-left: 4px solid #f87171;
-      color: #fee2e2;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+            color: #fff;
+            min-height: 100vh;
+        }
+        header {
+            background: rgba(0,0,0,0.2);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.3rem;
+            margin: 0;
+        }
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+            margin-bottom: 2rem;
+            transition: transform 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            margin-bottom: 1rem;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: 600;
+            color: #ffecec;
+        }
+        input[type="text"],
+        textarea,
+        input[type="file"] {
+            width: 100%;
+            padding: 0.75rem;
+            margin-top: 0.25rem;
+            border: none;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.8);
+            color: #333;
+            transition: all 0.2s;
+        }
+        input:focus,
+        textarea:focus {
+            box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+            outline: none;
+        }
+        button {
+            margin-top: 1.5rem;
+            padding: 0.85rem 2rem;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(90deg, #ff9966, #ff5e62);
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+        button:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #ff5e62, #ff9966);
+        }
+        .result {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.15);
+            border-left: 5px solid #00ffcc;
+            animation: fadeIn 0.4s ease-in-out;
+            color: #fff;
+        }
+        .error {
+            background: rgba(255,0,0,0.2);
+            border-left: 5px solid #ff4d4d;
+        }
+        .suggestion-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .suggestion-list li {
+            background: rgba(255,255,255,0.15);
+            padding: 0.6rem 0.8rem;
+            margin: 0.4rem 0;
+            border-radius: 6px;
+            border-left: 4px solid #ffe600;
+        }
+        .motivation {
+            margin-top: 1rem;
+            font-style: italic;
+            color: #ffe600;
+            font-weight: 500;
+        }
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
 </head>
 <body>
 <header>
-  <h1>🚀 Resume Matcher</h1>
-  <p>Upload your resume and see how well it matches the job requirements</p>
+    <h1>🔥 Resume Matcher</h1>
+    <p>Match your resume to a job and get AI-powered career advice</p>
 </header>
 
 <main>
-  <form id="matchForm">
-    <div class="card">
-      <h2>📄 Upload Your Resume</h2>
-      <label for="file">Resume (PDF)</label>
-      <input type="file" id="file" name="file" accept="application/pdf" required>
-    </div>
+    <form id="matchForm">
+        <div class="card">
+            <h2>📄 Upload Your Resume</h2>
+            <label for="file">Resume (PDF only)</label>
+            <input type="file" id="file" name="file" accept="application/pdf" required>
+        </div>
 
-    <div class="card">
-      <h2>💼 Job Details</h2>
-      <label for="jobTitle">Job Title</label>
-      <input type="text" id="jobTitle" name="jobTitle" placeholder="e.g., Java Developer" required>
+        <div class="card">
+            <h2>💼 Job Details</h2>
+            <label for="jobTitle">Job Title</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
 
-      <label for="jobDescription">Job Description</label>
-      <textarea id="jobDescription" name="jobDescription" rows="5" placeholder="Enter the job description..." required></textarea>
+            <label for="jobDescription">Job Description</label>
+            <textarea id="jobDescription" name="jobDescription" rows="5" required></textarea>
 
-      <label for="requiredSkills">Required Skills (comma-separated)</label>
-      <input type="text" id="requiredSkills" name="requiredSkills" placeholder="e.g., Java, Spring, SQL" required>
+            <label for="requiredSkills">Required Skills (comma-separated)</label>
+            <input type="text" id="requiredSkills" name="requiredSkills" placeholder="e.g., Java, Spring, SQL" required>
 
-      <button type="submit">⚡ Match Resume</button>
-    </div>
-  </form>
+            <button type="submit">🔍 Match Resume</button>
+        </div>
+    </form>
 
-  <div id="result" class="result" style="display: none;"></div>
+    <div id="result" class="result" style="display: none;"></div>
+    <div id="improvements" class="result" style="display: none;"></div>
 </main>
 
 <script>
-  const form = document.getElementById("matchForm");
-  const resultDiv = document.getElementById("result");
+    const form = document.getElementById("matchForm");
+    const resultDiv = document.getElementById("result");
+    const improvementsDiv = document.getElementById("improvements");
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
 
-    const fileInput = document.getElementById("file");
-    const jobTitle = document.getElementById("jobTitle").value;
-    const jobDescription = document.getElementById("jobDescription").value;
-    const requiredSkillsRaw = document.getElementById("requiredSkills").value;
-    const requiredSkills = requiredSkillsRaw.split(",").map(s => s.trim());
+        const fileInput = document.getElementById("file");
+        const jobTitle = document.getElementById("jobTitle").value;
+        const jobDescription = document.getElementById("jobDescription").value;
+        const requiredSkillsRaw = document.getElementById("requiredSkills").value;
+        const requiredSkills = requiredSkillsRaw.split(",").map(s => s.trim());
 
-    const formData = new FormData();
-    formData.append("file", fileInput.files[0]);
-    formData.append("jobTitle", jobTitle);
-    formData.append("jobDescription", jobDescription);
-    requiredSkills.forEach(skill => formData.append("requiredSkills", skill));
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+        formData.append("jobTitle", jobTitle);
+        formData.append("jobDescription", jobDescription);
+        requiredSkills.forEach(skill => formData.append("requiredSkills", skill));
 
-    try {
-      const response = await fetch("/api/match/resume", {
-        method: "POST",
-        body: formData
-      });
+        try {
+            const response = await fetch("/api/match/resume", {
+                method: "POST",
+                body: formData
+            });
 
-      if (!response.ok) {
-        throw new Error("Failed to get a match result.");
-      }
+            if (!response.ok) throw new Error("Failed to get a match result.");
 
-      const data = await response.json();
+            const data = await response.json();
 
-      resultDiv.style.display = "block";
-      resultDiv.classList.remove("error");
-      resultDiv.innerHTML = `
-        <h3>✅ Match Score: ${data.score.toFixed(2)}</h3>
-        <p><strong>Extracted Skills:</strong> ${data.extractedSkills.join(", ")}</p>
-      `;
-    } catch (err) {
-      resultDiv.style.display = "block";
-      resultDiv.classList.add("error");
-      resultDiv.innerHTML = `<p>❌ Error: ${err.message}</p>`;
+            resultDiv.style.display = "block";
+            resultDiv.classList.remove("error");
+            resultDiv.innerHTML = `
+                <h3>✅ Match Score: <span style="color:#00ffcc">${data.score.toFixed(2)}</span></h3>
+                <p><strong>Extracted Skills:</strong> ${data.extractedSkills.join(", ")}</p>
+                <button id="improveBtn">💡 Get AI Career Advice</button>
+            `;
+
+            document.getElementById("improveBtn").addEventListener("click", () => {
+                getImprovements(fileInput.files[0], jobTitle, jobDescription, requiredSkills);
+            });
+
+        } catch (err) {
+            resultDiv.style.display = "block";
+            resultDiv.classList.add("error");
+            resultDiv.innerHTML = `<p>❌ Error: ${err.message}</p>`;
+        }
+    });
+
+    async function getImprovements(file, jobTitle, jobDescription, requiredSkills) {
+        try {
+            const textFormData = new FormData();
+            textFormData.append("file", file);
+            textFormData.append("jobTitle", jobTitle);
+            textFormData.append("jobDescription", jobDescription);
+            requiredSkills.forEach(skill => textFormData.append("requiredSkills", skill));
+
+            const response = await fetch("/api/match/improvements", {
+                method: "POST",
+                body: textFormData
+            });
+
+            if (!response.ok) throw new Error("Failed to get improvement suggestions");
+
+            const data = await response.json();
+
+            improvementsDiv.style.display = "block";
+            improvementsDiv.innerHTML = `
+                <h3>💡 AI-Powered Improvement Suggestions</h3>
+                <p><strong>Suggested Improvements:</strong></p>
+                <ul class="suggestion-list">${Array.isArray(data.improvements) ? data.improvements.map(i => `<li>${i}</li>`).join("") : `<li>${data.improvements}</li>`}</ul>
+                <p><strong>Missing Skills:</strong> ${Array.isArray(data.missingSkills) ? data.missingSkills.join(", ") : data.missingSkills}</p>
+                <p class="motivation">"${data.motivation}"</p>
+            `;
+        } catch (err) {
+            alert("Error: " + err.message);
+        }
     }
-  });
 </script>
 </body>
 </html>

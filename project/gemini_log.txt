@@ -1,0 +1,76 @@
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you mention Docker, elaborate on your experience with container orchestration tools like Kubernetes or Docker Swarm if you have any. This is highly valuable in modern microservices architectures.\",\n    \"Quantify your achievements whenever possible. For example, instead of 'Optimized SQL queries, improving database performance by up to 30%', consider detailing the specific types of optimizations you implemented (e.g., index creation, query rewriting) and the before/after performance metrics.\",\n    \"Although you have experience with AWS EC2 and RDS, further detailing your knowledge of other cloud services (e.g., AWS Lambda, SQS, API Gateway) would strengthen your profile. Consider undertaking a small project using these services.\",\n    \"While you mention Test-Driven Development (TDD), provide a specific example of how you have applied it in your projects. Detail the benefits you observed from using a TDD approach.\",\n    \"In your projects, showcase more about the architectural decisions you made and the reasoning behind them. This demonstrates critical thinking.\"\n  ],\n  \"missingSkills\": [\n    \"The job description emphasizes critical thinking and logic building. While your resume demonstrates technical skills, it lacks explicit examples showcasing your problem-solving abilities. During interviews, prepare to discuss scenarios where you effectively applied logic and critical thinking to overcome complex challenges. Consider adding a section in your resume that shows your critical thinking skills.\"\n  ],\n  \"motivation\": \"Your resume showcases a strong foundation in Java and Spring Boot development. By focusing on elaborating cloud experience, showcasing problem-solving ability and quantifying your achievements, you can significantly enhance your profile and stand out from other candidates. Keep learning and showcasing your passion for software development!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.60058560306078768
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 800,
+    "candidatesTokenCount": 365,
+    "totalTokenCount": 1165,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 800
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 365
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "faKbaL64PNnN1PIPiMWK0Ao"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While your resume showcases solid experience with Java and Spring Boot, quantify your achievements further. Instead of saying 'reducing development time by 20%', specify the actual time saved, e.g., 'reduced development time by 20%, saving approximately 40 hours per sprint'.\",\n    \"For the 'optimized SQL queries', elaborate on the specific optimization techniques used (e.g., index tuning, query rewriting) and the impact on specific metrics (e.g., reduced latency from X ms to Y ms).\",\n    \"In the 'Employee Management System' project, mention specific architectural patterns used (e.g., CQRS, Event Sourcing) and the rationale behind choosing Docker and AWS services.\",\n    \"Though you mention CI/CD pipelines, elaborate on the tools and technologies used to set up the CI/CD process (e.g., Jenkins, GitLab CI, AWS CodePipeline). Describe the specific benefits or improvements the pipeline brought to the project.\",\n    \"Since critical thinking and logic building are key requirements, consider adding a section in your resume, possibly under 'Projects' or 'Professional Experience', explicitly mentioning instances where you demonstrated strong critical thinking and logic building skills to solve complex problems. For example, 'Debugged and resolved a complex memory leak issue in the payment processing module, requiring reverse engineering and advanced debugging techniques.'\",\n    \"Demonstrate proficiency with coding using python.\"\n  ],\n  \"missingSkills\": [\n    \"While your resume mentions several relevant skills, Python is explicitly listed as a required skill but not extensively detailed. Including some work experience or small personal projects with Python will strengthen your application. Even a simple mention of Python scripting for automation would be beneficial.\"\n  ],\n  \"motivation\": \"Your resume is already quite strong, highlighting your Java and Spring Boot expertise! Addressing the Python skills gap and further quantifying your achievements will significantly boost your chances. You've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.70062351456607685
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 800,
+    "candidatesTokenCount": 415,
+    "totalTokenCount": 1215,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 800
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 415
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "XaObaKv-D9nN1PIPiMWK0Ao"
+}
+
