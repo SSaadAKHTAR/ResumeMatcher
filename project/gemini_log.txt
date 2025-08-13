@@ -74,3 +74,193 @@
   "responseId": "XaObaKv-D9nN1PIPiMWK0Ao"
 }
 
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you mention JavaScript, quantify your experience with it. How have you used it in conjunction with your backend work? Mention specific libraries or frameworks if applicable (e.g., React, Angular, Vue).\",\n    \"Provide more specific examples of your Docker experience. Did you create Dockerfiles, manage container orchestration (e.g., Docker Swarm, Kubernetes - if so, specify which), or use Docker for CI/CD?\",\n    \"Even though you've used Spring Boot and Spring Cloud for microservices, elaborate on your understanding of microservices architecture principles (e.g., service discovery, API gateways, distributed tracing). Explain the challenges you faced and how you overcame them.\",\n    \"Quantify the impact of your CI/CD pipeline experience (e.g., reduced deployment time, improved code quality, fewer rollback incidents).\",\n    \"Consider adding specific project examples showcasing your Python skills, even if they are personal projects. This will directly address the missing Python skill.\"\n  ],\n  \"missingSkills\": [\n    \"The job description lists Python as a required skill, but your resume doesn't demonstrate sufficient proficiency. You should include specific Python projects or experience.\",\n    \"While you mention AWS EC2 and RDS, consider adding more details about your broader cloud computing knowledge. Do you have experience with other AWS services (e.g., S3, Lambda, ECS/EKS) or other cloud providers (e.g., Azure, GCP)?\"\n  ],\n  \"motivation\": \"You have a strong foundation in Java and Spring Boot development. By highlighting your existing skills with concrete examples and addressing the identified gaps, you can significantly increase your chances of landing the job. Keep learning and showcasing your abilities – you've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.46949519107216281
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 794,
+    "candidatesTokenCount": 380,
+    "totalTokenCount": 1174,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 794
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 380
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "uTOcaPquGPD_hMIPrJDmqQY"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While your resume highlights experience with Java and Spring Boot, quantify the impact of your work on specific projects. For example, instead of saying 'Improved database performance by up to 30%', specify the actual performance metrics improved and the business impact (e.g., 'Improved database query response time by 30%, resulting in a 15% reduction in page load times and a 10% increase in conversion rates').\",\n    \"Provide more details on your experience with Docker and CI/CD pipelines. Describe the specific tools you used (e.g., Docker Compose, Kubernetes, Jenkins, GitLab CI) and the processes you implemented. Quantify the impact of your CI/CD implementation (e.g., 'Reduced deployment time from 2 hours to 30 minutes').\",\n    \"Expand on your experience with JavaScript, HTML, and CSS. Even though it's not your primary focus, showcase how you've used these skills in conjunction with Java/Spring Boot projects (e.g., building front-end components, integrating with REST APIs).\",\n    \"Consider adding specific examples of how you've used Agile/Scrum methodologies, demonstrating your understanding of sprint planning, daily stand-ups, sprint reviews, and retrospectives.\",\n    \"If you have any experience with specific testing frameworks beyond JUnit and Mockito (e.g., Selenium, Cypress, JMeter), include them. This will further demonstrate your commitment to quality and thorough testing.\"\n  ],\n  \"missingSkills\": [\n    \"The job description includes Python, which is not extensively detailed in your resume. While it's listed under Technical Skills, consider taking a Python course or working on a small Python project to gain practical experience and showcase it on your resume. Even demonstrating basic proficiency in Python will significantly improve your candidacy.\",\n     \"While you mention AWS EC2 and RDS, elaborate on your experience with other cloud services relevant to Java development (e.g., AWS Lambda, AWS S3, Azure Functions, Google Cloud Functions). Showcasing broader cloud experience will make you a more versatile candidate.\"\n  ],\n  \"motivation\": \"Your resume demonstrates a solid foundation in Java and Spring Boot. By addressing the identified areas for improvement and highlighting your existing skills effectively, you'll significantly strengthen your application and increase your chances of landing the job. Keep learning and showcasing your achievements – you've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.41746241400348744
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 796,
+    "candidatesTokenCount": 513,
+    "totalTokenCount": 1309,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 796
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 513
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "azWcaJupOvyR7dcPuImCuQE"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you have experience with Docker, consider deepening your understanding of containerization best practices, orchestration (like Kubernetes, though not explicitly required), and related tooling. Articulate how you've used Docker to solve specific problems related to development, deployment, or scaling.\",\n    \"Quantify your achievements further. For example, instead of 'Reduced application downtime by 40%,' explain *how* you achieved this reduction (e.g., 'Reduced application downtime by 40% through implementing automated rolling deployments and proactive monitoring using Prometheus and Grafana').\",\n    \"Showcase your contributions to Agile teams more explicitly. Provide concrete examples of how you've participated in sprints, contributed to planning, and adapted to changing requirements.\",\n    \"Although you list JavaScript, elaborate on your Javascript skills by adding specific frameworks or libraries you used in conjunction with Java and Spring (e.g. React, Angular, or Vue.js, even if its just for simple front-end integration or testing).\",\n    \"Consider adding details on testing frameworks you are familiar with, beyond just JUnit and Mockito.\"\n  ],\n  \"missingSkills\": [\n    \"Python: The job description requires Python, but it is not mentioned in your experience or projects. Consider working on a small Python project to demonstrate basic proficiency or adding a relevant online course to your certifications.\",\n    \"Boot (Spring Boot): While it's implied with 'Spring Boot Developer,' explicitly stating 'Spring Boot' in the technical skills list can reinforce your proficiency.\"\n  ],\n  \"motivation\": \"Your resume showcases a strong foundation in Java and Spring Boot. Addressing the missing Python skill and further quantifying your achievements will significantly strengthen your application. Keep learning and highlighting your accomplishments – you've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.61345954955093507
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 794,
+    "candidatesTokenCount": 381,
+    "totalTokenCount": 1175,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 794
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 381
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "-TecaKDlAfSonvgPuMzXkQ4"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you have good experience, tailor your resume to emphasize the specific skills mentioned in *this* job description for a junior developer. For example, explicitly state your experience with HTML, Javascript, and Docker within your experience bullets.\",\n    \"Quantify your achievements further. Instead of saying you 'reduced development time,' specify by how much and the impact.\",\n    \"Though you have projects listed, ensure your GitHub repository is well-documented and showcases clean, well-commented code. Recruiters often check this.\",\n    \"Consider adding a 'Personal Projects' section if you have smaller projects showcasing your JavaScript or HTML skills.\",\n    \"Although your resume emphasizes backend skills, dedicate some space to frontend development to be more of a well-rounded candidate.\",\n    \"If the junior developer position requires work with Javascript frameworks, consider adding this to your skillset as well.\"\n  ],\n  \"missingSkills\": [\n    \"While you list Javascript, the job description may expect demonstrable frontend skills (e.g., experience with popular JavaScript frameworks like React, Angular, or Vue).\",\n    \"Your resume doesn't emphasize HTML as a key skill, yet it's listed as a required skill. Mention specific projects or experiences where you utilized HTML.\",\n    \"Your resume mentions Docker, but providing more specifics about your proficiency with Docker may be useful.\"\n  ],\n  \"motivation\": \"Syed, you have a strong foundation and impressive experience! By strategically highlighting the skills mentioned in this specific job description and filling a couple of minor gaps, you'll significantly increase your chances of landing the Junior Developer role. Keep refining your resume and showcasing your talent – you've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.75011161908711477
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 810,
+    "candidatesTokenCount": 365,
+    "totalTokenCount": 1175,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 810
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 365
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "yjucaLrqIqfI1PIP7NP1iQU"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify the impact of your projects and contributions (e.g., 'Increased prediction accuracy by X% using XGBoost').\",\n    \"Elaborate on the 'real-world problem-solving' aspect mentioned in your professional summary, providing specific examples.\",\n    \"Provide more details about your contributions to open-source projects (if applicable).\",\n    \"Showcase your ability to write clean, well-documented code.\",\n    \"Tailor your resume to emphasize the skills most relevant to the specific junior developer role you're applying for. Prioritize Python, JavaScript, and Java.\"\n  ],\n  \"missingSkills\": [\n    \"Docker\",\n    \"Spring\",\n    \"Boot\"\n  ],\n  \"motivation\": \"You've got a strong foundation in AI/ML and some key programming languages! Focus on acquiring the Docker and Spring/Boot skills, highlight your existing skills with impactful metrics, and you'll be a very competitive candidate. Keep learning and building!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.37375511441911968
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 789,
+    "candidatesTokenCount": 224,
+    "totalTokenCount": 1013,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 789
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 224
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "CkucaKDONPyThMIPqYXn-QQ"
+}
+

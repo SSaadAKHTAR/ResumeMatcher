@@ -165,83 +165,110 @@
 </main>
 
 <script>
-    const form = document.getElementById("matchForm");
-    const resultDiv = document.getElementById("result");
-    const improvementsDiv = document.getElementById("improvements");
+const form = document.getElementById("matchForm");
+const resultDiv = document.getElementById("result");
+const improvementsDiv = document.getElementById("improvements");
 
-    form.addEventListener("submit", async function (e) {
-        e.preventDefault();
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-        const fileInput = document.getElementById("file");
-        const jobTitle = document.getElementById("jobTitle").value;
-        const jobDescription = document.getElementById("jobDescription").value;
-        const requiredSkillsRaw = document.getElementById("requiredSkills").value;
-        const requiredSkills = requiredSkillsRaw.split(",").map(s => s.trim());
+    const fileInput = document.getElementById("file");
+    const jobTitle = document.getElementById("jobTitle").value;
+    const jobDescription = document.getElementById("jobDescription").value;
+    const requiredSkillsRaw = document.getElementById("requiredSkills").value;
+    const requiredSkills = requiredSkillsRaw.split(",").map(s => s.trim());
 
-        const formData = new FormData();
-        formData.append("file", fileInput.files[0]);
-        formData.append("jobTitle", jobTitle);
-        formData.append("jobDescription", jobDescription);
-        requiredSkills.forEach(skill => formData.append("requiredSkills", skill));
+    const formData = new FormData();
+    formData.append("file", fileInput.files[0]);
+    formData.append("jobTitle", jobTitle);
+    formData.append("jobDescription", jobDescription);
+    formData.append("requiredSkills", JSON.stringify(requiredSkills));
 
-        try {
-            const response = await fetch("/api/match/resume", {
-                method: "POST",
-                body: formData
-            });
+    try {
+        const response = await fetch("/api/match/resume", {
+            method: "POST",
+            body: formData
+        });
 
-            if (!response.ok) throw new Error("Failed to get a match result.");
-
-            const data = await response.json();
-
-            resultDiv.style.display = "block";
-            resultDiv.classList.remove("error");
-            resultDiv.innerHTML = `
-                <h3>✅ Match Score: <span style="color:#00ffcc">${data.score.toFixed(2)}</span></h3>
-                <p><strong>Extracted Skills:</strong> ${data.extractedSkills.join(", ")}</p>
-                <button id="improveBtn">💡 Get AI Career Advice</button>
-            `;
-
-            document.getElementById("improveBtn").addEventListener("click", () => {
-                getImprovements(fileInput.files[0], jobTitle, jobDescription, requiredSkills);
-            });
-
-        } catch (err) {
-            resultDiv.style.display = "block";
-            resultDiv.classList.add("error");
-            resultDiv.innerHTML = `<p>❌ Error: ${err.message}</p>`;
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Backend error ${response.status}: ${errorText}`);
         }
-    });
 
-    async function getImprovements(file, jobTitle, jobDescription, requiredSkills) {
+        const data = await response.json();
+
+        resultDiv.style.display = "block";
+        resultDiv.classList.remove("error");
+        resultDiv.innerHTML = `
+            <h3>✅ Match Score: 
+            <span style="color:#00ffcc">
+                ${data.score.toFixed(2)}%
+            </span>
+            </h3>
+            <p><strong>Extracted Skills:</strong> ${data.extractedSkills.join(", ")}</p>
+            <button id="improveBtn">💡 Get AI Career Advice</button>
+        `;
+
+        document.getElementById("improveBtn").addEventListener("click", () => {
+            getImprovements(fileInput.files[0], jobTitle, jobDescription, requiredSkills);
+        });
+
+    } catch (err) {
+        resultDiv.style.display = "block";
+        resultDiv.classList.add("error");
+        resultDiv.innerHTML = `<p>❌ Error: ${err.message}</p>`;
+    }
+});
+
+async function getImprovements(file, jobTitle, jobDescription, requiredSkills) {
+    function parseList(dataField) {
+        if (Array.isArray(dataField)) return dataField;
         try {
-            const textFormData = new FormData();
-            textFormData.append("file", file);
-            textFormData.append("jobTitle", jobTitle);
-            textFormData.append("jobDescription", jobDescription);
-            requiredSkills.forEach(skill => textFormData.append("requiredSkills", skill));
-
-            const response = await fetch("/api/match/improvements", {
-                method: "POST",
-                body: textFormData
-            });
-
-            if (!response.ok) throw new Error("Failed to get improvement suggestions");
-
-            const data = await response.json();
-
-            improvementsDiv.style.display = "block";
-            improvementsDiv.innerHTML = `
-                <h3>💡 AI-Powered Improvement Suggestions</h3>
-                <p><strong>Suggested Improvements:</strong></p>
-                <ul class="suggestion-list">${Array.isArray(data.improvements) ? data.improvements.map(i => `<li>${i}</li>`).join("") : `<li>${data.improvements}</li>`}</ul>
-                <p><strong>Missing Skills:</strong> ${Array.isArray(data.missingSkills) ? data.missingSkills.join(", ") : data.missingSkills}</p>
-                <p class="motivation">"${data.motivation}"</p>
-            `;
-        } catch (err) {
-            alert("Error: " + err.message);
+            const parsed = JSON.parse(dataField);
+            return Array.isArray(parsed) ? parsed : [parsed];
+        } catch {
+            return [dataField];
         }
     }
+
+    try {
+        const textFormData = new FormData();
+        textFormData.append("file", file);
+        textFormData.append("jobTitle", jobTitle);
+        textFormData.append("jobDescription", jobDescription);
+        textFormData.append("requiredSkills", JSON.stringify(requiredSkills));
+
+        const response = await fetch("/api/match/improvements", {
+            method: "POST",
+            body: textFormData
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            throw new Error(`Backend error ${response.status}: ${errorText}`);
+        }
+
+        const data = await response.json();
+        const improvements = parseList(data.improvements);
+        const missingSkills = parseList(data.missingSkills);
+
+        improvementsDiv.style.display = "block";
+        improvementsDiv.innerHTML = `
+            <h3>💡 AI-Powered Improvement Suggestions</h3>
+            <p><strong>Suggested Improvements:</strong></p>
+            <ul class="suggestion-list">
+                ${improvements.map(i => `<li>${i}</li>`).join("")}
+            </ul>
+            <p><strong>Missing Skills:</strong></p>
+            <ul class="missing-skills">
+                ${missingSkills.map(skill => `<li>${skill}</li>`).join("")}
+            </ul>
+            <p class="motivation">"${data.motivation}"</p>
+        `;
+    } catch (err) {
+        alert("Error: " + err.message);
+    }
+}
 </script>
 </body>
 </html>
