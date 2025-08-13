@@ -41,17 +41,28 @@ public class ImprovementService {
     ) throws IOException {
 
         String prompt = String.format("""
-            You are an AI career advisor. The user has applied for the job: %s.
+            You are an AI career advisor and mentor with expertise in recruitment, HR, and career development.
+            The user has applied for the job: %s.
+
             Job description: %s
             Required skills: %s
             Resume content: %s
 
-            Based on the resume and job requirements:
-            1. Suggest specific skills or experiences the user should improve (as a JSON array of strings).
-            2. Highlight key skills the user lacks compared to the job requirements (as a JSON array of strings).
-            3. Provide a short motivational message to encourage the user.
-            Respond strictly in JSON format with keys: improvements, missingSkills, motivation.
+            Your task:
+            Return your entire response as a valid JSON object with the following keys:
+            - "improvements": An array of bullet-point strings explaining areas the user can improve.
+            - "missingSkills": An array of bullet-point strings explaining missing skills and why they matter.
+            - "keyStrengths": An array of bullet-point strings highlighting what the user is already doing well.
+            - "careerTips": An array of bullet-point strings with actionable suggestions for next steps, resources, networking advice, or certifications.
+            - "motivation": A short motivational message as a single string.
+
+            Guidelines:
+            - Each bullet point should be a complete, natural sentence.
+            - Do not include any text outside the JSON object.
+            - Ensure the JSON is valid and properly escaped.
             """, jobTitle, jobDescription, requiredSkills, resume);
+
+
 
         OkHttpClient client = new OkHttpClient();
 

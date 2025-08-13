@@ -264,3 +264,383 @@
   "responseId": "CkucaKDONPyThMIPqYXn-QQ"
 }
 
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify project achievements with metrics (e.g., 'Increased prediction accuracy by X%').\",\n    \"Showcase experience with Spring framework (if any personal projects exist).\",\n    \"Elaborate on the specific SQL databases used and types of queries written.\",\n    \"Provide more details about your experience with Java beyond just listing it as a programming language.\",\n    \"If possible, demonstrate Docker experience with a small project or setup.\"\n  ],\n  \"missingSkills\": [\n    \"Spring Framework\",\n    \"Docker\"\n  ],\n  \"motivation\": \"Your passion for technology and diverse skill set are impressive! Focusing on acquiring Docker and Spring experience will significantly strengthen your application and open doors to exciting opportunities. Keep learning and building!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.49845646702966023
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 779,
+    "candidatesTokenCount": 172,
+    "totalTokenCount": 951,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 779
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 172
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "aVecaNnCDqSNhMIP9cW_mAw"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify your accomplishments with metrics whenever possible (e.g., 'Reduced deployment errors by X%').\",\n    \"Tailor your resume to emphasize specific projects or experiences that directly align with the specific responsibilities mentioned in the job description for a junior developer role. While your experience is impressive, highlighting relevant aspects for a junior position will be beneficial.\",\n    \"Focus on specific technologies used within Spring Boot in your descriptions. For example, mention if you used Spring Data JPA or Spring Security.\",\n    \"Expand on your AI skills. Provide specific examples of projects where you applied AI concepts or libraries, even if they were academic projects.\"\n  ],\n  \"missingSkills\": [\n    \"While you list AI as a skill, the resume lacks concrete examples of AI-related projects or experience. This needs to be addressed, even if it's through personal projects or coursework.\"\n  ],\n  \"motivation\": \"Your resume showcases a strong background in Java and Spring Boot! To boost your chances, focus on tailoring your experience to the junior developer role, highlighting relevant skills, and showcasing any AI knowledge you have. You've got this!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.54511699526328738
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 574,
+    "candidatesTokenCount": 254,
+    "totalTokenCount": 828,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 574
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 254
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "EFqcaOKxKNCUsbQPm9zxoAc"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    {\n      \"area\": \"AI Skills\",\n      \"suggestion\": \"While you list AI in your required skills, there's no mention of AI projects or experience in your resume. Consider completing a small AI project (e.g., using TensorFlow or PyTorch) and highlighting it on your GitHub and resume. Focus on areas like machine learning fundamentals or natural language processing.\",\n      \"example\": \"Develop a simple image classifier or sentiment analysis tool using Python and relevant libraries. Document the project thoroughly on GitHub.\"\n    },\n    {\n      \"area\": \"Quantify Achievements\",\n      \"suggestion\": \"Continue to quantify your accomplishments with specific metrics. While you've done this with performance improvements and deployment time reduction, look for other areas to add numbers.\",\n      \"example\": \"Instead of 'Built and optimized backend services,' try 'Improved backend service response time by 25% by optimizing database queries and caching strategies.'\"\n    },\n    {\n      \"area\": \"Tailor Resume to Junior Role\",\n      \"suggestion\": \"Your experience suggests a mid-level or senior Java developer role. To target a junior position, emphasize your willingness to learn and contribute, potentially de-emphasizing the 'Senior' title if possible, and focus on your foundational skills.\",\n      \"example\": \"Reframe experience descriptions to showcase learning and growth, e.g., 'Contributed to the development of scalable Java applications, gaining experience with Spring Boot and Hibernate.'\"\n    }\n  ],\n  \"missingSkills\": [\n    {\n      \"skill\": \"Specific AI Applications\",\n      \"reason\": \"The job description mentions AI; your resume lists it as a skill, but lacks tangible examples. Demonstrating practical AI application is crucial.\",\n      \"solution\": \"Complete a relevant AI course on Coursera or Udacity and add a related project to your portfolio.\"\n    }\n  ],\n  \"strengths\": [\n    \"Strong Java background with Spring Boot and Hibernate experience.\",\n    \"Proven ability to design and implement RESTful APIs.\",\n    \"Experience with CI/CD pipelines and DevOps tools like Jenkins and Docker.\",\n    \"Solid understanding of database systems (MySQL, PostgreSQL, MongoDB).\"\n  ],\n  \"careerTips\": [\n    {\n      \"tip\": \"Highlight Relevant Projects\",\n      \"action\": \"Prioritize projects that align with the specific technologies and requirements mentioned in the junior developer job description. Make sure these are easily accessible on your GitHub.\"\n    },\n    {\n      \"tip\": \"Network with Junior Developers\",\n      \"action\": \"Attend local tech meetups or online communities focused on Java and AI to connect with other junior developers and learn about entry-level opportunities. This could help you understand the skill expectations and tailor your resume accordingly.\"\n    },\n    {\n      \"tip\": \"Consider Open Source Contributions\",\n      \"action\": \"Contribute to open-source projects that utilize Java, Spring Boot, or AI technologies. This demonstrates your commitment to continuous learning and collaboration.\"\n    }\n  ],\n  \"motivation\": \"You possess a strong foundation and valuable experience. With a few targeted adjustments to highlight your learning agility and enthusiasm for AI, you'll be well-positioned to land that junior developer role. Keep learning, keep building, and believe in your potential!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.35586316072488133
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 767,
+    "candidatesTokenCount": 711,
+    "totalTokenCount": 1478,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 767
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 711
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "KFucaPGWAcOWn9kP9YXlKQ"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Okay, John, let's review your resume and application for the Junior Developer role. I want to give you some constructive feedback to help you land that job!\n\n**1. Areas to Improve**\n\n*   **Inconsistencies with Experience Level:** Your resume currently presents you as a seasoned professional with \"Senior Java Developer\" experience. This creates a disconnect with applying for a \"Junior Developer\" role. Hiring managers might question your motivations – are you overqualified, or will you be satisfied with junior-level tasks? To address this, consider tailoring your resume to highlight aspects relevant to a junior role, such as eagerness to learn, foundational skills, and potential for growth.\n*   **Downplay Senior Role Responsibilities:** While it's great you have significant experience, for a junior role, you need to downplay leadership and high-level responsibilities. Focus instead on your contributions as a team member, your ability to learn quickly, and your specific technical skills related to the job description.\n*   **Quantify Junior-Relevant Accomplishments:** Even when describing your experience, tailor the metrics you use. Instead of just saying \"improved system performance by 30%,\" perhaps highlight a specific instance where you implemented a fix that improved a junior-level task or process.\n*   **Highlighting Learning & Growth:** The resume should emphasize your eagerness to learn and adapt. Mention specific technologies or methodologies you're actively learning or interested in exploring, especially those relevant to the job description or the company's tech stack. This helps demonstrate your potential for growth within a junior role.\n*   **Resume Tailoring:** While you list relevant skills, make sure your resume is tailored to each specific job description. Highlight skills that are explicitly mentioned in the description and provide examples of how you've used them, even in smaller projects or learning exercises.\n\n**2. Missing Skills**\n\n*   **Emphasis on \"AI\"**: The job description mentions \"AI\" as a required skill. While you list Python, which is often used in AI development, you don't explicitly mention any AI-related projects, libraries (like TensorFlow or PyTorch), or concepts (like machine learning or deep learning). Even a brief mention of a personal AI project or a course you took could significantly improve your application. This signals that you are either generally interested in the topic of AI or potentially already have some basic experience.\n*   **Detail on Spring Boot usage:** While you mention Spring Boot, elaborate on what aspects of Spring Boot you've used. Have you worked with Spring Data JPA, Spring Security, or Spring Cloud? Adding specifics shows a deeper understanding.\n*    **Testing:** Expand on testing methodologies beyond JUnit. Mention integration testing, end-to-end testing, or other testing frameworks if you have experience.\n\n**3. Key Strengths**\n\n*   **Strong Technical Foundation:** You possess a solid foundation in Java, SQL, and related technologies like Spring Boot and Hibernate. This is a great starting point for a Junior Developer role.\n*   **Hands-on Experience:** You have demonstrable experience in developing and maintaining web applications, working with databases, and implementing CI/CD pipelines. This practical experience is valuable.\n*   **Cloud and DevOps Exposure:** Your experience with AWS, Docker, and Jenkins is a significant advantage. Cloud and DevOps skills are increasingly important in modern software development.\n*   **Agile Experience:** Your experience collaborating in Agile sprints demonstrates your ability to work effectively in a team environment.\n*   **Education:** You have a computer science degree, which is a huge benefit.\n\n**4. Career Tips**\n\n*   **Tailor your resume and cover letter.** Create a specific version for each application, emphasizing the skills and experiences most relevant to that particular job. For a junior role, frame your experience as learning opportunities.\n*   **Create a portfolio of personal projects.** Showcase your skills by building small applications or contributing to open-source projects. This is especially crucial for demonstrating AI skills. If you're interested in AI, create a simple project like an image classifier or a text summarizer.\n*   **Network with other developers.** Attend meetups, conferences, or online forums to connect with other developers and learn about job opportunities.\n*   **Consider certifications.** While not always necessary, certifications in Java, Spring Boot, or AWS can demonstrate your commitment to learning and professional development. Look into entry-level certifications.\n*   **Practice your technical skills.** Practice coding challenges on platforms like LeetCode or HackerRank to prepare for technical interviews. Focus on data structures and algorithms commonly used in Java development.\n*   **Craft a compelling cover letter:** Explain why you're interested in the specific Junior Developer role, how your skills and experience align with the job requirements, and what you hope to achieve in the position. Addressing the experience level question in your cover letter can be useful.\n*   **Consider entry-level certifications**: Look at entry-level certifications for Java or Spring if you want to stand out.\n\n**5. Motivational Message**\n\nJohn, you have a strong foundation and valuable experience. By tailoring your resume to highlight your junior-level skills, eagerness to learn, and passion for software development, you can significantly increase your chances of landing the Junior Developer role you desire. Believe in your potential, stay focused, and keep learning!\n"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.5497022257671097
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 682,
+    "candidatesTokenCount": 1105,
+    "totalTokenCount": 1787,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 682
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1105
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "4VucaMKGOIrR698Py62KgAU"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"The resume presents information that is inconsistent with the target role; it highlights senior-level experience when applying for a junior position.\",\n    \"Quantifiable achievements are good, but ensure they are relevant to a junior developer role.\",\n    \"Consider tailoring your resume to specifically address the required skills mentioned in the job description to highlight the most relevant experience.\"\n  ],\n  \"missingSkills\": [\n    \"While you list 'AI' as a skill, there is no specific mention of AI-related projects or experiences; elaborating on your experience or interest in this area would strengthen your application, especially if the role involves AI development.\",\n    \"The resume highlights significant experience, which might be perceived as overqualified for a junior position; clearly articulating why you are seeking a junior role despite your experience is crucial.\"\n  ],\n  \"keyStrengths\": [\n    \"You have a strong foundation in Java development, with experience in Spring Boot and related technologies, which are valuable for many backend development roles.\",\n    \"Your experience with databases like MySQL, PostgreSQL, and MongoDB demonstrates versatility in data management.\",\n    \"You possess experience with CI/CD pipelines using Jenkins and Docker, indicating familiarity with DevOps practices.\"\n  ],\n  \"careerTips\": [\n    \"Reframe your experience to emphasize a desire to learn and grow within a junior developer role, potentially highlighting mentorship experience as a reason for seeking a less senior position.\",\n    \"In your cover letter, directly address why you are applying for a junior role despite having senior-level experience, perhaps citing a career change, a desire to focus on a specific technology (like AI), or a preference for a different work environment.\",\n    \"Consider highlighting personal projects or contributions to open-source projects that showcase your interest in continuous learning and willingness to contribute at any level.\",\n    \"Research specific AI tools and frameworks to expand your knowledge and demonstrate a proactive interest in AI development, making your skills more marketable.\",\n    \"Network with junior developers and recent graduates to understand their experiences and challenges, which can help you better understand the expectations of a junior role.\"\n  ],\n  \"motivation\": \"Your experience is valuable, so tailor your application to show how your skills and passion can contribute to the team's success in a junior role!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.50593735741787271
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 670,
+    "candidatesTokenCount": 488,
+    "totalTokenCount": 1158,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 670
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 488
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "zF2caPCqDYPcnvgPtu2M2Qw"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you list Java as a skill, it's not prominently featured in your experience or projects; highlight any Java-specific projects or coursework you've undertaken.\",\n    \"Quantify your achievements whenever possible; instead of saying you 'performed EDA,' specify the size of the datasets and the impact of your insights.\",\n    \"Tailor your resume to the specific job description; emphasize the skills and experiences that are most relevant to a junior developer role, especially those related to Java and Springboot.\",\n    \"Consider adding a brief section highlighting your understanding of software development principles like Agile or DevOps if you have any familiarity.\"\n  ],\n  \"missingSkills\": [\n    \"You need more demonstrable experience with Java, as it's listed as a required skill in the job description; focus on developing Java projects to showcase your abilities.\",\n    \"Springboot experience is crucial, as it's explicitly listed as a required skill; consider taking online courses or working on personal projects to gain proficiency in this framework.\",\n    \"While you have experience with AI and machine learning, these skills may not be directly relevant to a general junior developer role; prioritize showcasing your core programming skills first.\",\n    \"Experience with testing frameworks (e.g., JUnit, Mockito) is important for ensuring code quality; consider learning and incorporating testing into your projects.\"\n  ],\n  \"keyStrengths\": [\n    \"You have a strong foundation in data science and machine learning, which demonstrates your ability to learn and apply complex concepts.\",\n    \"Your experience with multiple programming languages and tools showcases your versatility and adaptability.\",\n    \"You have a good portfolio of projects on GitHub, which is a great way to demonstrate your skills to potential employers.\",\n    \"Your research internship experience highlights your ability to contribute to ongoing projects and work in a collaborative environment.\"\n  ],\n  \"careerTips\": [\n    \"Focus on building Java and Springboot projects to demonstrate your skills to potential employers; create a portfolio that showcases your abilities in these areas.\",\n    \"Contribute to open-source Java projects to gain experience working with larger codebases and collaborating with other developers.\",\n    \"Network with other developers and attend industry events to learn about new technologies and job opportunities.\",\n    \"Obtain relevant certifications in Java or Springboot to validate your skills and demonstrate your commitment to professional development.\",\n    \"Practice coding interview questions regularly, especially those related to data structures and algorithms in Java.\"\n  ],\n  \"motivation\": \"Your passion for technology and your diverse skillset are valuable assets. With a targeted effort to develop your Java and Springboot skills, you'll be well-positioned to land that junior developer role!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.36274071006508141
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 875,
+    "candidatesTokenCount": 572,
+    "totalTokenCount": 1447,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 875
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 572
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "O16caJ-aDtmSmNAPnZ6suQY"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify your achievements whenever possible, adding metrics to showcase the impact of your work (e.g., increased accuracy by X%, reduced processing time by Y%).\",\n    \"Tailor your resume to specifically highlight Java and Spring Boot experience, given the job description's requirements.\",\n    \"Provide more detail about the projects you've worked on, emphasizing your specific contributions and the challenges you overcame.\",\n    \"Consider adding a dedicated section for relevant coursework to showcase your academic preparation for this role.\"\n  ],\n  \"missingSkills\": [\n    \"You lack explicitly stated experience with Spring Boot, which is a required skill; consider building a small project using Spring Boot to showcase your abilities.\",\n    \"While you list Java as a programming language, you should highlight specific projects or experiences where you've used it extensively to demonstrate proficiency.\",\n    \"Although you mention SQL Developer and MySQL, providing more context around your experience with SQL (e.g., writing complex queries, database design) would be beneficial.\"\n  ],\n  \"keyStrengths\": [\n    \"You possess a strong foundation in AI, machine learning, and data science, which are valuable assets in the current tech landscape.\",\n    \"Your project portfolio demonstrates your ability to apply your knowledge to real-world problems.\",\n    \"You have experience with a variety of programming languages and tools, showcasing your adaptability and willingness to learn.\",\n    \"Your internship experience, particularly at MERL, indicates a proactive approach to gaining practical experience.\"\n  ],\n  \"careerTips\": [\n    \"Create a Spring Boot project (e.g., a simple REST API) and add it to your GitHub to demonstrate practical Spring Boot skills.\",\n    \"Take online courses or complete tutorials on Java and Spring Boot to deepen your knowledge and build your portfolio.\",\n    \"Contribute to open-source Java or Spring Boot projects to gain experience working in a collaborative environment and showcase your code quality.\",\n    \"Network with Java developers and recruiters at meetups or online forums to learn about job opportunities and gain insights into industry best practices.\",\n    \"Obtain relevant certifications in Java or Spring Boot to validate your skills and enhance your resume.\",\n    \"Prepare specific examples of how you've applied AI or data science principles to solve problems, even if indirectly relevant, demonstrating your problem-solving skills.\"\n  ],\n  \"motivation\": \"Your passion for technology is evident, and with a focused approach to acquiring the necessary skills, you'll be well on your way to landing your dream junior developer role. Keep learning and building!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.402278893172632
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 875,
+    "candidatesTokenCount": 547,
+    "totalTokenCount": 1422,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 875
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 547
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "HWOcaNjzCOmBn9kPuJCq4QI"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify your achievements whenever possible, adding specific numbers to demonstrate the impact of your work (e.g., 'Increased model accuracy by X%' or 'Reduced processing time by Y milliseconds').\",\n    \"Tailor your resume to explicitly mention the keywords and technologies listed in the job description, even if it means rephrasing some sections.\",\n    \"Provide more context on the size and scope of the projects you've worked on, including team size, duration, and the overall objective.\",\n    \"Clearly differentiate your internship experiences by highlighting the specific responsibilities and accomplishments in each role.\",\n    \"Refine your professional summary to directly align with the junior developer position, showcasing your Java skills and your interest in Spring Boot.\"\n  ],\n  \"missingSkills\": [\n    \"While you list Java as a programming language, demonstrate practical experience with Java by including Java-based projects or contributions to open-source Java projects, as this is a key requirement for the role.\",\n    \"Provide concrete examples of using SQL, detailing the types of databases you've worked with (e.g., MySQL, PostgreSQL) and the specific types of queries you've written.\",\n    \"Develop your knowledge and hands-on experience with Spring Boot, as it's listed as a required skill and commonly used in Java-based backend development; consider building a small personal project using Spring Boot to demonstrate proficiency.\",\n    \"While AI skills are valuable, this role is for a Junior Developer, so ensure your AI focus does not overshadow core development skills like Java and SQL.\"\n  ],\n  \"keyStrengths\": [\n    \"You possess a strong foundation in computer science principles, demonstrated by your academic background and project experience.\",\n    \"Your experience with data science and machine learning showcases your ability to learn new technologies and apply them to solve real-world problems.\",\n    \"You have experience with multiple programming languages, including Python, Java, and Scala, indicating your adaptability and willingness to learn new tools.\",\n    \"Your project portfolio on GitHub provides tangible evidence of your coding abilities and your commitment to open-source contributions.\"\n  ],\n  \"careerTips\": [\n    \"Build a simple Spring Boot application and host it on GitHub to showcase your ability to create REST APIs and work with backend frameworks.\",\n    \"Contribute to an open-source Java project to gain practical experience and demonstrate your ability to collaborate with other developers.\",\n    \"Consider taking online courses or certifications in Java and Spring Boot to enhance your skills and demonstrate your commitment to learning.\",\n    \"Network with other developers in the Java community by attending meetups, joining online forums, or connecting with people on LinkedIn.\",\n    \"Prepare specific examples of your coding skills and problem-solving abilities to discuss during technical interviews.\"\n  ],\n  \"motivation\": \"Your passion for technology is evident! With a focused effort on showcasing your Java and Spring Boot skills, you'll be well on your way to landing that junior developer role. Keep learning and building!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.42632826319280659
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 875,
+    "candidatesTokenCount": 636,
+    "totalTokenCount": 1511,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 875
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 636
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "E2ecaIL6H_yR7dcPuImCuQE"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify more achievements: Instead of just stating you contributed, provide specific numbers or results whenever possible (e.g., reduced debugging time by X%, improved code efficiency by Y%).\",\n    \"Tailor the summary to Qualcomm: While your summary is good, customize it to directly address Qualcomm's needs by highlighting the skills and experiences most relevant to their work.\",\n    \"Explain the impact of projects: While your projects are impressive, elaborate on the real-world impact or potential impact of these projects beyond just technical details.\",\n    \"Provide more context for intern positions: Briefly describe the company's/organization's focus and your team's goals to give better context to your contributions.\",\n    \"Address any gaps between expected graduation and internship dates: If there's a significant time gap between your graduation date and the internship dates, consider adding a brief explanation (e.g., taking a semester off for research).\"\n  ],\n  \"missingSkills\": [\n    \"C and C++: While you list several languages, the job description emphasizes C and C++. Explicitly showcasing projects where you've used these languages will strengthen your candidacy.\",\n    \"Android development and framework: Given Qualcomm's focus on mobile technology, experience with Android development and framework is highly desirable. Consider taking online courses or contributing to open-source Android projects to gain this experience.\",\n    \"Embedded systems: Qualcomm is a leader in embedded systems. Highlighting any relevant coursework, projects, or experience in this area is crucial.\",\n    \"Debugging: Debugging is a core skill for software engineers. Provide specific examples of how you've effectively debugged complex software issues, ideally using specific tools or techniques.\",\n    \"API and Micro-services: Qualcomm develops software utilizing APIs and micro-services. Display your experience with those technologies.\",\n    \"Communication protocols (e.g., Wi-Fi, Bluetooth, Ethernet): Given Qualcomm's expertise in wireless technologies, familiarize yourself with these protocols and consider adding relevant projects to your portfolio. \",\n    \"System architecture: Include any experience related to system design and architecture. This could involve coursework, personal projects, or contributions to open-source projects.\",\n    \"Cloud technologies: While not always essential, showcasing cloud experience (e.g., AWS, Azure, GCP) can be beneficial as Qualcomm increasingly leverages cloud infrastructure.\"\n  ],\n  \"keyStrengths\": [\n    \"Strong academic background: Your ongoing Bachelor's degree in Software Engineering is a solid foundation.\",\n    \"Relevant internship experience: Your internships at RISC-V International and MERL demonstrate practical experience and exposure to cutting-edge technologies.\",\n    \"Demonstrated experience with RISC-V: Your work with RISC-V tooling and benchmark suites aligns well with potential Qualcomm projects.\",\n    \"Proficiency in Python, Verilog, and Chisel: Your skills in these languages are valuable for hardware and software development.\",\n    \"Experience with LLMs and AI: Your AI4Org project and work with LLMs showcase your interest in emerging technologies.\",\n    \"Project portfolio: The GitHub links provide tangible examples of your skills and contributions.\"\n  ],\n  \"careerTips\": [\n    \"Target your resume and cover letter: Customize your application materials for each specific Qualcomm role, highlighting the skills and experiences most relevant to that role.\",\n    \"Practice technical interview questions: Prepare for coding challenges and system design questions commonly asked in software engineering interviews, particularly those related to C++, Android, and embedded systems.\",\n    \"Network with Qualcomm employees: Attend industry events or connect with Qualcomm engineers on LinkedIn to learn more about their work and company culture.\",\n    \"Contribute to relevant open-source projects: Contributing to open-source projects related to Android, embedded systems, or RISC-V can provide valuable experience and demonstrate your passion.\",\n    \"Consider relevant certifications: Obtaining certifications in areas like Android development or embedded systems can enhance your credibility.\",\n    \"Build personal projects: Develop personal projects that showcase your skills in Android development, C++, or embedded systems to demonstrate your abilities beyond your academic work.\"\n  ],\n  \"motivation\": \"Your passion for software engineering and your experience with RISC-V make you a promising candidate. By addressing the skills gaps and highlighting your strengths, you can significantly increase your chances of landing the job at Qualcomm. Keep learning and building, and you'll reach your career goals!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.47595531566722971
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1133,
+    "candidatesTokenCount": 925,
+    "totalTokenCount": 2058,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1133
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 925
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "JmmcaIi-M8_gx_APoqvCgQQ"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"Quantify your accomplishments with metrics to showcase the impact of your projects (e.g., 'Increased website traffic by X%').\",\n    \"Tailor your resume to match the specific requirements listed in the job description; highlight relevant skills and experience.\",\n    \"Expand the descriptions of your projects to explain the problem you were solving, the technologies used, and the results achieved.\",\n    \"Provide more detail about your responsibilities and accomplishments as a Hardware Designer to demonstrate the depth of your experience.\",\n    \"Add a dedicated section for 'Technical Skills' and list all relevant programming languages, frameworks, databases, and tools you're proficient in.\"\n  ],\n  \"missingSkills\": [\n    \"You lack explicit mention of many required skills like React.js, Angular, Node.js, database design (MySQL, PostgreSQL, MongoDB), cloud platforms (AWS, Azure, Google Cloud), and testing frameworks (Jest, Mocha, Cypress, Playwright), which are all listed as required in the job description; consider acquiring or highlighting any existing experience with these technologies.\",\n    \"You do not demonstrate experience with DevOps basics, including Docker, Kubernetes, Nginx, or Apache, which are important for modern software engineering roles and deployment processes; it is advisable to gain familiarity with these tools.\",\n    \"There is no mention of security practices like authentication/authorization (OAuth, JWT) or web security best practices (XSS, CSRF, SQL injection prevention); demonstrating this knowledge shows you prioritize secure coding.\",\n    \"Agile/Scrum methodologies are listed as required, but there's no explicit mention of your experience with these frameworks; include examples of how you've used Agile principles in past projects or roles.\",\n    \"You are missing any indication of experience in scalability planning and microservices architecture, which are important to demonstrate building scalable solutions.\"\n  ],\n  \"keyStrengths\": [\n    \"You have diverse project experience, including web development, hardware design, and AI-related projects, which demonstrates versatility.\",\n    \"Your experience in designing and developing responsive websites using HTML, CSS, JavaScript, and WordPress shows proficiency in front-end development.\",\n    \"You have experience with both software engineering and hardware design, which could be an advantage depending on the specific role and projects at Systems.\",\n    \"You present a clear timeline of education and experience, making it easy for recruiters to understand your background.\",\n    \"You've included your GitHub profile, allowing recruiters to easily access your code samples and projects.\"\n  ],\n  \"careerTips\": [\n    \"Focus on building personal projects that showcase your skills in the technologies mentioned in the job description (e.g., a React application with a Node.js backend).\",\n    \"Consider taking online courses or certifications in areas where you lack experience, such as cloud computing, database management, or security best practices.\",\n    \"Network with software engineers at Systems or similar companies to learn more about their work and the skills they value; LinkedIn is a great resource.\",\n    \"Practice your technical interview skills by solving coding challenges on platforms like LeetCode or HackerRank.\",\n    \"Prepare a portfolio website that effectively demonstrates your skills and projects, including detailed descriptions and links to your code repositories.\"\n  ],\n  \"motivation\": \"You've got the foundation to build a successful software engineering career. Keep learning, stay curious, and showcase your skills through impactful projects. Your dedication will open doors!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.49894705948422435
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 809,
+    "candidatesTokenCount": 726,
+    "totalTokenCount": 1535,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 809
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 726
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "kW2caL-CBriknvgPq5Ha2Aw"
+}
+
