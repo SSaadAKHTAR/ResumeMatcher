@@ -644,3 +644,79 @@
   "responseId": "kW2caL-CBriknvgPq5Ha2Aw"
 }
 
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you have experience with several databases, consider showcasing deeper knowledge in a specific one relevant to the job description (if applicable).\",\n    \"Quantify more achievements, aiming to demonstrate impact wherever possible using metrics and percentages.\",\n    \"Tailor your resume to each specific job application, emphasizing the skills and experiences most relevant to that role.\",\n    \"Consider adding a section for 'Awards & Recognition' if you have any relevant achievements beyond what's listed.\",\n    \"In your project descriptions, include details on the challenges you faced and how you overcame them to showcase problem-solving abilities.\"\n  ],\n  \"missingSkills\": [\n    \"You lack explicit mention of 'Artificial Intelligence' skills, which is a required skill; consider adding any relevant experience, projects, or coursework, even if it's introductory.\",\n    \"While you have general cloud experience with AWS, specify any particular AI-related services you might have used, such as AWS SageMaker, if applicable, to bridge the gap.\"\n  ],\n  \"keyStrengths\": [\n    \"You have a strong foundation in Java and Spring Boot, which are highly sought-after skills for backend development.\",\n    \"Your experience in REST API development and microservices architecture demonstrates your ability to build scalable and maintainable applications.\",\n    \"You have a solid understanding of database technologies and SQL, which is crucial for data-driven applications.\",\n    \"You have experience with DevOps tools like Docker and Jenkins, indicating a good understanding of the software development lifecycle.\",\n    \"You effectively quantify your accomplishments with metrics, such as reducing development time by 20% and improving database performance by 30%.\"\n  ],\n  \"careerTips\": [\n    \"Focus on projects related to AI or machine learning to address the 'Artificial Intelligence' skill gap, even small personal projects can demonstrate interest and initiative.\",\n    \"Network with other developers and AI professionals at industry events and online communities to learn about new trends and opportunities.\",\n    \"Consider pursuing certifications related to cloud computing and AI, such as AWS Certified Machine Learning – Specialty, to validate your skills.\",\n    \"Contribute to open-source projects to gain more experience and showcase your coding skills to potential employers.\",\n    \"Practice your coding skills on platforms like LeetCode and HackerRank to prepare for technical interviews.\"\n  ],\n  \"motivation\": \"Your resume showcases a solid foundation. By addressing the missing skills and continually refining your presentation, you'll significantly increase your chances of landing your dream job. Keep learning and applying!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.4544868539490533
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 902,
+    "candidatesTokenCount": 543,
+    "totalTokenCount": 1445,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 902
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 543
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "hcadaPaRL_-vnvgPiPLh4Qs"
+}
+
+
+=== Gemini API Response ===
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "```json\n{\n  \"improvements\": [\n    \"While you list Java versions 8-21, specify which versions you have practical experience with beyond just familiarity.\",\n    \"Quantify the impact of your work whenever possible, adding metrics to showcase the results of your efforts (e.g., 'Increased API request handling capacity by X%').\",\n    \"Elaborate on your experience with Python, as it's listed as a required skill but not detailed in your resume's professional experience or projects.\",\n    \"Provide more detail about the architectural patterns you've employed within the microservices architecture, such as event-driven architecture or CQRS.\",\n    \"Showcase your experience with front-end technologies, even if it's just integration with back-end, by mentioning specific front-end frameworks you've worked with (e.g., React, Angular, Vue.js) beyond just 'React-based UI'.\"\n  ],\n  \"missingSkills\": [\n    \"Your resume lacks specific examples of Python use, making it appear less strong despite being a required skill; provide examples where you've used Python for scripting, automation, or API development.\",\n    \"Mentioning experience with testing frameworks beyond JUnit and Mockito, such as integration testing tools, would further strengthen your profile.\",\n    \"Details on experience with different cloud providers (e.g., Azure, GCP) or containerization technologies beyond Docker (e.g., Kubernetes) could be valuable, depending on the specific job requirements.\",\n    \"Experience with monitoring and logging tools (e.g., Prometheus, Grafana, ELK stack) would demonstrate your ability to maintain and troubleshoot applications in production.\"\n  ],\n  \"keyStrengths\": [\n    \"You have a solid foundation in Java and Spring Boot, demonstrated by your experience at TechNova Solutions and SoftTech Systems.\",\n    \"Your experience in developing REST APIs and microservices architecture showcases your ability to build scalable and maintainable applications.\",\n    \"You demonstrate a clear understanding of database optimization techniques, leading to improved performance.\",\n    \"Your involvement in Agile teams and focus on Test-Driven Development (TDD) highlight your commitment to high-quality software development.\",\n    \"The inclusion of personal projects like the E-Commerce Backend API and Employee Management System effectively showcases your practical skills.\"\n  ],\n  \"careerTips\": [\n    \"Contribute to open-source projects to showcase your coding skills and collaborate with other developers.\",\n    \"Consider obtaining certifications related to cloud computing (e.g., AWS Certified Developer, Azure Developer Associate) or specific Spring technologies to validate your expertise.\",\n    \"Network with other Java developers at meetups, conferences, and online communities to learn about new technologies and job opportunities.\",\n    \"Practice common Java coding interview questions and system design scenarios to prepare for technical interviews.\",\n    \"Create a blog or online portfolio to showcase your projects and share your knowledge with others.\"\n  ],\n  \"motivation\": \"Keep building on your strong foundation and highlighting your achievements; you're on the right track to a successful Java development career!\"\n}\n```"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "avgLogprobs": -0.43075910026644482
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 898,
+    "candidatesTokenCount": 648,
+    "totalTokenCount": 1546,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 898
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 648
+      }
+    ]
+  },
+  "modelVersion": "gemini-2.0-flash",
+  "responseId": "QoqjaPC4GsbInsEP25GUiAU"
+}
+
