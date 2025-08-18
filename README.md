@@ -33,24 +33,23 @@ Built with **Spring Boot (Java)** for the backend and **React** for the frontend
 
 ## 📂 Project Structure
 
-resume-matcher/
-│── backend/ (Spring Boot Java)
-│ ├── src/main/java/com/resumematcher
-│ │ ├── controller
-│ │ ├── service
-│ │ ├── engine
-│ │ ├── strategy
-│ │ ├── model
-│ │ ├── utils
-│ └── ResumeMatcherApplication.java
-│
-│── frontend/ (React JS)
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.js
-│ │ ├── index.js
-│
+```bash
+resume-matcher/  
+│── backend/ (Spring Boot Java)  
+│   ├── src/main/java/com/resumematcher  
+│   │   ├── controller  
+│   │   ├── service  
+│   │   ├── engine  
+│   │   ├── strategy  
+│   │   ├── model  
+│   │   ├── utils  
+│   └── ResumeMatcherApplication.java  
+│  
+│── frontend/ (React JS)  
+│   ├── src/  
+│   │   ├── components/  
+│   │   ├── pages/  
+│   │   ├── App.js  
+│   │   ├── index.js  
+│  
 └── README.md
-
----
